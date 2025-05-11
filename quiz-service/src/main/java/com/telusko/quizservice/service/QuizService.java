@@ -42,7 +42,6 @@ public class QuizService {
           List<Integer> questionIds = quiz.getQuestionIds();
           ResponseEntity<List<QuestionWrapper>> questions = quizInterface.getQuestionsFromId(questionIds);
           return questions;
-
     }
 
     public ResponseEntity<Integer> calculateResult(Integer id, List<Response> responses) {
